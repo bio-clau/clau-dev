@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import {useNavigate} from 'react-router-dom';
 import { MenuIcon, SunIcon, MoonIcon } from "@heroicons/react/solid";
 
 function Navbar() {
+  const navigate = useNavigate()
   const [menu, setMenu] = useState("hidden");
   const [dark, setDark] = useState(false);
   function handleMenu() {
@@ -11,6 +13,16 @@ function Navbar() {
       setMenu("hidden");
     }
   }
+  function goProjects(){
+    navigate('/projects')
+  }
+  function goHome(){
+    navigate('/')
+  }
+  function goContact(){
+    navigate('/contact')
+  }
+
 
   function changeTheme() {
     const aux = localStorage.getItem("theme");
@@ -26,7 +38,7 @@ function Navbar() {
   }
 
   return (
-    <div className="h-14 bg-lm-primary dark:bg-dm-overlay2 transition duration-500 ease-in-out flex justify-start items-center">
+    <div className="h-14 bg-lm-primary dark:bg-dm-overlay2 transition-color duration-500 ease-in-out flex justify-start items-center">
       <div className="flex w-full justify-between">
         <button className=" xl:hidden flex justify-start items-center cursor-pionter mr-2">
           <MenuIcon
@@ -35,9 +47,11 @@ function Navbar() {
           />
         </button>
         <div className="hidden xl:flex xl:items-center xl:text-lm-onPrimary dark:xl:text-dm-onBackground xl:text-2xl xl:font-bold">
-          <a className="m-4 hover:text-dm-primary" href="/">Home</a>
-          <a className="m-4 hover:text-dm-primary" href="/projects">My Projects</a>
-          <a className="m-4 hover:text-dm-primary" href="/contact">Contact Me</a>
+        <button onClick={goHome} className="m-4 hover:text-dm-primary">Home</button>
+          
+          <button onClick={goProjects} className="m-4 hover:text-dm-primary">My Projects</button>
+          <button onClick={goContact} className="m-4 hover:text-dm-primary">Contact Me</button>
+
         </div>
         {dark ? (
           <button>
@@ -57,24 +71,15 @@ function Navbar() {
       </div>
       <div className={`${menu} min-w-max `}>
         <div className="backdrop-blur-3xl backdrop-brightness-125 dark:backdrop-brightness-100 rounded-lg absolute top-5 z-20 min-w-max shadow-xl shadow-lm-primaryVariant dark:shadow-dm-onBackground">
-          <a
-            className="block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary"
-            href="/"
-          >
+          <button onClick={goHome} className=" w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
             Home
-          </a>
-          <a
-            className="block text-lm-onSecondary dark:text-dm-onBackground p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary"
-            href="/projects"
-          >
+          </button>
+          <button onClick={goProjects} className="w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
             My Projects
-          </a>
-          <a
-            className="block text-lm-onSecondary dark:text-dm-onBackground rounded-b-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary"
-            href="/contact"
-          >
+          </button>
+          <button onClick={goContact} className="w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
             Contact Me
-          </a>
+          </button>
         </div>
       </div>
     </div>

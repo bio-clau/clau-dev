@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      // Render blocking JS:
+      if (localStorage.theme) document.documentElement.classList.add('dark');
+      </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,7 +30,7 @@
     -->
     <title>Clau Web Dev</title>
   </head>
-  <body class="bg-lm-background dark:bg-dm-background transition duration-500 ease-in-out">
+  <body class="dark:bg-dm-background transition duration-500 ease-in-out bg-lm-background">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
