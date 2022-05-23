@@ -72,7 +72,7 @@ function Navbar() {
           </button>
         )}
       </div>
-      <div className={`${menu} min-w-max `}>
+      <div className={`${menu} xl:hidden min-w-max `}>
         <div className="backdrop-blur-3xl backdrop-brightness-125 dark:backdrop-brightness-100 rounded-lg absolute top-5 z-20 min-w-max shadow-xl shadow-lm-primaryVariant dark:shadow-dm-onBackground">
           <button onClick={goHome} className=" w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
             Home
