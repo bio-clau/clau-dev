@@ -14,12 +14,15 @@ function Navbar() {
     }
   }
   function goProjects(){
+    setMenu("hidden");
     navigate('/projects')
   }
   function goHome(){
+    setMenu("hidden");
     navigate('/')
   }
   function goContact(){
+    setMenu("hidden");
     navigate('/contact')
   }
 
