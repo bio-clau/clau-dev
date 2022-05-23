@@ -77,10 +77,10 @@ function Navbar() {
           <button onClick={goHome} className=" w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
             Home
           </button>
-          <button onClick={goProjects} className="w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
+          <button onClick={goProjects} className="w-full block text-lm-onSecondary dark:text-dm-onBackground p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
             My Projects
           </button>
-          <button onClick={goContact} className="w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
+          <button onClick={goContact} className="w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-b-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
             Contact Me
           </button>
         </div>
