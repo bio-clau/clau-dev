@@ -26,7 +26,7 @@ function Navbar() {
   }
 
   return (
-    <div className="h-14 bg-lm-primary dark:bg-dm-overlay2 flex justify-start items-center">
+    <div className="h-14 bg-lm-primary dark:bg-dm-overlay2 transition duration-500 ease-in-out flex justify-start items-center">
       <div className="flex w-full justify-between">
         <button className=" xl:hidden flex justify-start items-center cursor-pionter mr-2">
           <MenuIcon

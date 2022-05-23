@@ -10,7 +10,7 @@ import Thanks from './pages/Thanks'
 
 function App() {
   return (
-    <div className="App bg-lm-background dark:bg-dm-background">
+    <div className="App ">
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />

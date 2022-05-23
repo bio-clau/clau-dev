@@ -55,46 +55,6 @@ module.exports = {
       'dm-overlay2':'#222222',
       'dm-overlay3':'#2c2c2c',
       'dm-overlay4':'#373737',
-
-      // gris muy obscuro:
-      'background': '#16161a',
-      // blanco:
-      'headline': '#fffffe',
-      // gris claro:
-      'paragraph': '#94a1b2',
-      // lila:
-      'button': '#bb86fc',
-      // blaco:
-      'buttontext': '#fffffe',
-      // negro:
-      'stroke': '#010101',
-      // gris obscuro:
-      'secondary': '#72757e',
-      // verde:
-      'tertiary': '#03dac5',
-      // lila:
-      'highlight': '#bb86fc',
-      //blanco
-      'l-background':'#fef6e4',
-      //gris obscuro
-      'l-headline':'#001858',
-      //gris obscuro
-      'l-paragraph':'#172c66',
-      //celeste
-      'l-button':'#f582ae',
-      //blanco
-      'l-buttontext':'#001858',
-      //gris obscuro
-      'l-stroke':'#001858',
-      //celeste super claro
-      'l-secondary':'#8bd3dd',
-      //rosado
-      'l-tertiary':'#f582ae',
-      //celkeste
-      'l-highlight':'#fef6e4',
-      'l-main':'#f3d2c1',
-      'l-test':'#E9BDBD',
-      'test2':'#D0C9F0'
     },
     extend: {
       backgroundImage:{
