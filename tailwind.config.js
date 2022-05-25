@@ -55,21 +55,24 @@ module.exports = {
       'dm-overlay2':'#222222',
       'dm-overlay3':'#2c2c2c',
       'dm-overlay4':'#373737',
+      'dm-shadow':'#b5bdab',
+      'dm-hover': '#2c2c2cb3'
     },
     extend: {
       backgroundImage:{
         "dm-header": "url('/src/img/background3.png')",
         "lm-header": "url('/src/img/lm-bg.png')",
-        "landing": "url('/src/img/poke/landing.png')",
-        "mobLanding": "url('/src/img/poke/mob-landing.png')",
-        "detail": "url('/src/img/poke/detail.png')",
-        "mobDetail": "url('/src/img/poke/mob-detail.png')",
+        "Poke": "url('/src/img/poke/landing.png')",
+        "Poke-hover": "url('/src/img/poke/landing-hover.png')",
+        "Home": "url('/src/img/mc/home.png')",
+        "Home-hover": "url('/src/img/mc/home-hover.png')",
         "pokedex": "url('/src/img/poke/pokedex.png')",
         "mobPokedex": "url('/src/img/poke/mob-pokedex.png')",
         "create": "url('/src/img/poke/create.png')",
         "mobCreate": "url('/src/img/poke/mob-create.png')",
-      }
+      },
     },
+
   },
   plugins: [],
 }

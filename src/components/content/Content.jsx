@@ -4,7 +4,7 @@ import WhyMe from './WhyMe'
 
 function Content() {
   return (
-    <div>
+    <div className='min-h-min'>
       <WhyMe />
       <Techs />
     </div>
