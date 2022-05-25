@@ -19,9 +19,9 @@ function Contact() {
 
   return (
     <div className='flex flex-col items-center justify-center'>
-        <p className='text-lm-onBackground dark:text-dm-onBackground font-extrabold text-3xl lg:text-5xl p-8'>Get in touch with me</p>
+        <p className='text-lm-onBackground dark:text-dm-onBackground font-extrabold text-4xl p-8'>Get in touch with me</p>
         <div className='flex flex-col lg:flex-row lg:justify-around lg:items-center lg:w-2/4'>
-            <div id='contactInfoContainer' className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 p-4 text-xl lg:text-3xl'>
+            <div id='contactInfoContainer' className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 ml-8 p-4'>
                 <div className='flex flex-row justify-start items-center p-2'>
                     <div className='w-10 m-2 rounded-md bg-lm-secondaryVariant dark:bg-dm-secondaryVariant transition duration-500 ease-in-out'>
                     <img className='block dark:hidden' src={Lmail} alt="mail" />
@@ -58,7 +58,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 p-4 text-xl lg:text-3xl'>
+            <div className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 mr-8 p-4'>
                 <form action="https://formsubmit.co/clau.neme@gmail.com" method="POST">
                     <div className='flex flex-col items-start p-4'>
                         <label className='text-lm-onSecondary dark:text-dm-onBackground font-bold pb-1'>Your name</label>
