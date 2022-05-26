@@ -1,14 +1,12 @@
-import React from "react";
-import Header from "../components/Header";
-import Content from "../components/content/Content";
+import React from 'react'
+import Header from '../components/Header'
 
 function Home() {
   return (
-    <div>
-      <Header />
-      <Content />
-    </div>
-  );
+    <div className='h-full'>
+    <Header />
+  </div>
+  )
 }
 
-export default Home;
+export default Home

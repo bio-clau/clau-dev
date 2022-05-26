@@ -1,9 +1,9 @@
 import React from "react";
-import Techs from "./content/Techs";
-import WhyMe from "./content/WhyMe";
-import mia from "../img/mia-new.png";
+import Techs from "../../components/content/Techs";
+import WhyMe from "./WhyMe";
+import mia from "../../img/mia-new.png";
 
-function Header() {
+function HeaderNew() {
   return (
     <>
       <div className="hidden md:flex md:flex-row justify-around items-center">
@@ -44,4 +44,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderNew;

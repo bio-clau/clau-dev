@@ -19,7 +19,7 @@ import tux from '../../img/iconos/tux2.png';
 function Techs() {
 
   return (
-    <div className='bottom-0 md:absolute md:bottom-7 md:left-0 md:right-0 '>
+    <div className=''>
       <div>
         <div className='flex justify-center'>
         <p className='text-lm-onBackground dark:text-dm-onBackground font-extrabold text-xl pb-5'>Technologies</p>

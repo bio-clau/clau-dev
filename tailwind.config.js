@@ -60,8 +60,7 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        "dm-header": "url('/src/img/background3.png')",
-        "lm-header": "url('/src/img/lm-bg.png')",
+      
         "Poke": "url('/src/img/poke/landing.png')",
         "Poke-hover": "url('/src/img/poke/landing-hover.png')",
         "Home": "url('/src/img/mc/home.png')",
