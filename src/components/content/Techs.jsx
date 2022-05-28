@@ -1,4 +1,5 @@
 import React from 'react'
+import {useLang} from '../../context/LangContext'
 import CSS from '../../img/iconos/CSS.png';
 import Express from '../../img/iconos/Express-white.png';
 import LExpress from '../../img/iconos/express.png';
@@ -17,12 +18,12 @@ import LScrum from '../../img/iconos/Lscrum.png';
 import tux from '../../img/iconos/tux2.png';
 
 function Techs() {
-
+  const {lang} = useLang();
   return (
     <div className=''>
       <div>
         <div className='flex justify-center'>
-        <p className='text-lm-onBackground dark:text-dm-onBackground font-extrabold text-xl pb-5'>Technologies</p>
+        <p className='text-lm-onBackground dark:text-dm-onBackground font-extrabold text-xl pb-5'>{lang==='eng'?'Technologies':'Tecnologías'}</p>
         </div>
       <div className='flex justify-center h-14 md:h-16 lg:h-20'>
         <img className='h-full p-3' src={Node} alt="Node" />

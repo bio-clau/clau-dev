@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import {useLang} from '../context/LangContext'
 import {useNavigate} from 'react-router-dom';
-import { MenuIcon, SunIcon, MoonIcon } from "@heroicons/react/solid";
+import { MenuIcon, SunIcon, MoonIcon, TranslateIcon } from "@heroicons/react/solid";
 
 function Navbar() {
   const navigate = useNavigate()
   const [menu, setMenu] = useState("hidden");
   const [dark, setDark] = useState(false);
+  const {lang, changeLang} = useLang()
   function handleMenu() {
     if (menu === "hidden") {
       setMenu("absolute");
@@ -25,7 +27,6 @@ function Navbar() {
     setMenu("hidden");
     navigate('/contact')
   }
-
 
   function changeTheme() {
     const aux = localStorage.getItem("theme");
@@ -50,12 +51,19 @@ function Navbar() {
           />
         </button>
         <div className="hidden xl:flex xl:items-center xl:text-lm-onPrimary dark:xl:text-dm-onBackground xl:text-2xl xl:font-bold">
-        <button onClick={goHome} className="m-4 hover:text-dm-primary">Home</button>
+        <button onClick={goHome} className="m-4 hover:text-dm-primary">{lang==='eng'?'Home':'Inicio'}</button>
           
-          <button onClick={goProjects} className="m-4 hover:text-dm-primary">My Projects</button>
-          <button onClick={goContact} className="m-4 hover:text-dm-primary">Contact Me</button>
+          <button onClick={goProjects} className="m-4 hover:text-dm-primary">{lang==='eng'?'My Projects': 'Mis Proyectos'}</button>
+          <button onClick={goContact} className="m-4 hover:text-dm-primary">{lang==='eng'?'Contact Me': 'Contáctame'}</button>
 
         </div>
+        <div className="flex items-center">
+          <button onClick={changeLang} className="mr-2">
+            <TranslateIcon className="h-10 w-10  text-lm-onPrimary dark:text-dm-onBackground" />
+          </button>
+          <p className="text-2xl text-lm-onPrimary dark:text-dm-onBackground mr-12">
+          {lang}
+          </p>
         {dark ? (
           <button>
             <SunIcon
@@ -71,17 +79,18 @@ function Navbar() {
             />
           </button>
         )}
+        </div>
       </div>
       <div className={`${menu} xl:hidden min-w-max `}>
         <div className="backdrop-blur-3xl backdrop-brightness-125 dark:backdrop-brightness-100 rounded-lg absolute top-5 z-20 min-w-max shadow-xl shadow-lm-primaryVariant dark:shadow-dm-onBackground">
           <button onClick={goHome} className=" w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-t-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
-            Home
+          {lang==='eng'?'Home':'Inicio'}
           </button>
           <button onClick={goProjects} className="w-full block text-lm-onSecondary dark:text-dm-onBackground p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
-            My Projects
+          {lang==='eng'?'My Projects': 'Mis Proyectos'}
           </button>
           <button onClick={goContact} className="w-full block text-lm-onSecondary dark:text-dm-onBackground rounded-b-lg p-3 no-underline text-lg hover:bg-lm-secondary dark:hover:bg-dm-primary">
-            Contact Me
+          {lang==='eng'?'Contact Me': 'Contáctame'}
           </button>
         </div>
       </div>

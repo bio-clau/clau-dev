@@ -1,4 +1,5 @@
 import './App.css';
+import {LangProvider} from './context/LangContext'
 import {Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
@@ -9,8 +10,13 @@ import Contact from './pages/Contact'
 import Thanks from './pages/Thanks'
 
 function App() {
+  // useEffect(()=>{
+  //   if(!localStorage.lang){
+  //     localStorage.setItem('lang', 'eng')
+  //   }
+  // }, [])
   return (
-    <div className="App ">
+    <LangProvider>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -20,7 +26,7 @@ function App() {
         <Route path='/markets-center' element={<MarketsCenter />} />
         <Route path='/thankyou' element={<Thanks />} />
       </Routes>
-    </div>
+    </LangProvider>
   );
 }
 

@@ -1,0 +1,27 @@
+{
+    "eng":{
+        "description":"Full–Stack development of a market place using the technologies: NodeJS, Express, Firebase, Stripe, React, Redux, MongoDB, Mongoose and MaterialUI, and has a responsive style (deploy in Heroku and Vercel). It is part of the Bootcamp Henry group project, in which a group of 7 developers participated. On this page, you can access as a seller and thus create, edit and delete products that are for sale and view your sales history. As a buyer you have access to a favorites section, shopping cart, profile with your data and purchase history, you can also make purchases using the Stripe payment gateway. Finally, the admin actor will be able to keep track of the categories, the purchases made and the users.",
+        "captions":[
+            "Home Page",
+            "Responsive Home Page",
+            "Detail Card",
+            "Responsive Detail Card",
+            "Favourites",
+            "Responsive Favourites",
+            "Shopping Cart",
+            "Responsive Shopping Cart"
+        ]
+    },
+    "spa":{
+        "description":"Desarrollo Full–Stack de un market place utilizazndo las tecnologias: NodeJS, Express, Firebase, Stripe, React, Redux, MongoDB, Mongoose y MaterialUI, y cuenta con estilo responsive (deploy en Heroku y Vercel). Forma parte del proyecto grupal del Bootcamp Henry, en el cual participó un grupo de 7 desarrolladores. En esta página, se puede acceder como vendedor y asi crear, editar y eliminar productos que estén a la venta y ver el historial su de ventas. Como comprador se tiene acceso a un apartado de favoritos, carrito de compra, perfil con sus datos e historial de compras, tambien se pueden realizar compras utilizando la pasarela de pagos Stripe. Finalmente, el actor admin, podra llevar un control sobre las categorias, las compras realizadas y los usuarios.",
+        "captions":[
+            "Página de Inicio",
+            "Página de Inicio Responsive",
+            "Tarjeta de Detalle",
+            "Tarjeta de Detalle Responsive",
+            "Favoritos",
+            "Favoritos Responsive",
+            "Carrito de Compras",
+            "Carrito de Compras Responsive"
+        ]    }
+}

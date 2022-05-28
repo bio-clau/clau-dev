@@ -1,0 +1,27 @@
+{
+    "eng":{
+        "description":"FullStack development of a SPA, as an individual project at Bootcamp Henry, using the technologies: NodeJS, Express, React, Redux, PostgreSQL, Sequelize and CSS, deploy on Heroku. On this page, you can take a tour of the Pokémon provided by pokemonapi.co, containing filtering features by type, and sorting by name and strength. In it you can create Pokémon that are stored in a relational database in the cloud (ElephantSQL) and has a responsive design.",
+        "captions":[
+            "Landing Page",
+            "Responsive Landing Page",
+            "Pokédex",
+            "Responsive Pokédex",
+            "Detail Card",
+            "Responsive Detail Card",
+            "Create Form",
+            "Responsive Create Form"
+        ]
+    },
+    "spa":{
+        "description":"Desarrollo FullStack de una SPA, como proyecto individual en el Bootcamp Henry, utilizazndo las tecnologias: NodeJS, Express, React, Redux, PostgreSQL, Sequelize y CSS, deploy en Heroku. En esta página, se puede hacer un recorrido de los Pokémon provistos por pokemonapi.co , contiente las funcionalidades de filtrado por tipo, y ordenamiento por nombre y fuierza. En la misma se pueden crear Pokémon que son almacenados en una base de datos relacional en la nube (ElephantSQL) y cuenta con estilo responsive.",
+        "captions":[
+        "Página Principal",
+        "Página Principal Responsive",
+        "Pokédex",
+        "Pokédex Responsive",
+        "Tarjeta de Detalle",
+        "Tarjeta de Detalle Responsive",
+        "Formulario de Creación",
+        "Formulario de Creación Responsive"
+        ]    }
+}
