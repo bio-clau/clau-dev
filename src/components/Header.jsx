@@ -2,7 +2,6 @@ import React from "react";
 import {useLang} from '../context/LangContext'
 import Techs from "./content/Techs";
 import WhyMe from "./content/WhyMe";
-import mia from "../img/mia-new.png";
 
 function Header() {
   const {lang} = useLang();
@@ -10,7 +9,7 @@ function Header() {
     <>
       <div className="hidden md:flex md:flex-row justify-around items-center">
         <div className="flex justify-around items-center w-4/12">
-          <img className="h-fit p-6" src={mia} alt="mia" />
+          <img className="h-fit p-6" src='https://res.cloudinary.com/tropura/image/upload/v1654187987/Portfolio/mia-new_kzplij.png' alt="mia" />
         </div>
         <div className="flex flex-col items-center justify-evenly w-8/12">
           <div className="pt-10">
@@ -27,7 +26,7 @@ function Header() {
       </div>
       <div className="md:hidden flex flex-col justify-around items-center">
         <div className="flex justify-between items-center">
-          <img className="w-2/4" src={mia} alt="mia" />
+          <img className="w-2/4" src='https://res.cloudinary.com/tropura/image/upload/v1654187987/Portfolio/mia-new_kzplij.png' alt="mia" />
           <div className="flex flex-col items-center justify-evenly">
             <h1 className=" md:text-5xl sm:text-4xl font-extrabold text-lm-onBackground dark:text-dm-onBackground text-xl">
             {lang==='eng'?"Hi! I'm Claudia Neme" : "Hola! Soy Claudia Neme"}

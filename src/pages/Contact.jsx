@@ -1,12 +1,6 @@
 import React from 'react'
 import {useLang} from '../context/LangContext'
 import {LocationMarkerIcon} from '@heroicons/react/solid'
-import mail from '../img/iconos/mail.png';
-import linkedin from '../img/iconos/linkedin.png';
-import GB from '../img/iconos/GH-b.png';
-import LGB from '../img/iconos/LGH-b.png';
-import Llinkedin from '../img/iconos/Llinkedin.png';
-import Lmail from '../img/iconos/Lmail.png';
 
 function Contact() {
     const {lang} = useLang();
@@ -21,13 +15,13 @@ function Contact() {
 
   return (
     <div className='flex flex-col items-center justify-center'>
-        <p className='text-lm-onBackground dark:text-dm-onBackground font-extrabold text-4xl p-8'>{lang==='eng'?'Get in touch with me':'Contácta conmigo'}</p>
-        <div className='flex flex-col lg:flex-row lg:justify-around lg:items-center lg:w-2/4'>
-            <div id='contactInfoContainer' className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 ml-8 p-4'>
+        <p className='text-lm-onBackground dark:text-dm-onBackground font-extrabold text-4xl p-8'>{lang==='eng'?'Get in touch with me':'Contacta conmigo'}</p>
+        <div className='flex flex-col items-center lg:flex-row lg:justify-around lg:items-center lg:w-2/4'>
+            <div id='contactInfoContainer' className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 lg:ml-8 p-4'>
                 <div className='flex flex-row justify-start items-center p-2'>
                     <div className='w-10 m-2 rounded-md bg-lm-secondaryVariant dark:bg-dm-secondaryVariant transition duration-500 ease-in-out'>
-                    <img className='block dark:hidden' src={Lmail} alt="mail" />
-                    <img className='hidden dark:block' src={mail} alt="mail" />
+                    <img className='block dark:hidden' src='https://res.cloudinary.com/tropura/image/upload/v1654188320/Portfolio/iconos/Lmail_k3vyn8.png' alt="mail" />
+                    <img className='hidden dark:block' src='https://res.cloudinary.com/tropura/image/upload/v1654188321/Portfolio/iconos/mail_afrivd.png' alt="mail" />
                     </div>
                     <div className='text-lm-onSecondary dark:text-dm-onBackground ml-4'>
                     <p>clau.neme@gmail.com</p>
@@ -35,8 +29,8 @@ function Contact() {
                 </div>
                 <div className='flex flex-row justify-start items-center p-2'>
                     <div className='w-10 m-2 rounded-md bg-lm-secondaryVariant dark:bg-dm-secondaryVariant transition duration-500 ease-in-out'>
-                    <img className='block dark:hidden' src={Llinkedin} alt="mail"/>
-                    <img className='hidden dark:block' src={linkedin} alt="mail" />
+                    <img className='block dark:hidden' src='https://res.cloudinary.com/tropura/image/upload/v1654188320/Portfolio/iconos/Llinkedin_xgwvt5.png' alt="mail"/>
+                    <img className='hidden dark:block' src='https://res.cloudinary.com/tropura/image/upload/v1654188320/Portfolio/iconos/linkedin_p1ud7z.png' alt="mail" />
                     </div>
                     <div className='text-lm-onSecondary dark:text-dm-onBackground ml-4'>
                     <a href="https://www.linkedin.com/in/nemeclaudia/">/in/nemeclaudia/</a>
@@ -44,8 +38,8 @@ function Contact() {
                 </div>
                 <div className='flex flex-row justify-start items-center p-2'>
                     <div className='w-10 m-2 rounded-md bg-lm-secondaryVariant dark:bg-dm-secondaryVariant transition duration-500 ease-in-out'>
-                    <img className='block dark:hidden' src={LGB} alt="mail" />
-                    <img className='hidden dark:block' src={GB} alt="mail" />
+                    <img className='block dark:hidden' src='https://res.cloudinary.com/tropura/image/upload/v1654188321/Portfolio/iconos/LGH-b_kahcel.png' alt="mail" />
+                    <img className='hidden dark:block' src='https://res.cloudinary.com/tropura/image/upload/v1654188320/Portfolio/iconos/GH-b_hm0amx.png' alt="mail" />
                     </div>
                     <div className='text-lm-onSecondary dark:text-dm-onBackground ml-4'>
                     <a href="https://github.com/bio-clau">/bio-clau</a>
@@ -60,7 +54,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 mr-8 p-4'>
+            <div className='border-2 border-lm-secondaryVariant shadow-md shadow-lm-onBackground dark:bg-dm-overlay2 dark:border-dm-secondaryVariant dark:shadow-dm-onBackground transition duration-500 ease-in-out rounded-lg m-3 lg:mr-8 p-4'>
                 <form action="https://formsubmit.co/clau.neme@gmail.com" method="POST">
                     <div className='flex flex-col items-start p-4'>
                         <label className='text-lm-onSecondary dark:text-dm-onBackground font-bold pb-1'>{lang==='eng'?'Your name':'Tu nombre'}</label>

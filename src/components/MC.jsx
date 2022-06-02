@@ -3,29 +3,6 @@ import {useLang} from '../context/LangContext'
 
 import {ChevronRightIcon, ChevronLeftIcon} from '@heroicons/react/solid'
 
-import RespHome from '../img/mc/mob/RespHome.png';
-import RespHomeMob from '../img/mc/mob/RespHomeMob.png';
-import RespDetail from '../img/mc/mob/RespDetail.png';
-import RespDetailMob from '../img/mc/mob/RespDetailMob.png';
-import RespFav from '../img/mc/mob/RespFav.png';
-import RespFavMob from '../img/mc/mob/RespFavMob.png';
-import RespCart from '../img/mc/mob/RespCart.png';
-import RespCartMob from '../img/mc/mob/RespCartMob.png';
-
-import home from '../img/mc/home.png';
-import mobHome from '../img/mc/mobHome.png';
-import detail from '../img/mc/detail.png';
-import mobDetail from '../img/mc/mobDetail.png';
-import fav from '../img/mc/fav.png';
-import mobFav from '../img/mc/mobFav.png';
-import cart from '../img/mc/cart.png';
-import mobCart from '../img/mc/mobCart.png';
-
-import YT from '../img/iconos/YouTube.png';
-import web from '../img/iconos/web.png';
-import GH from '../img/iconos/GH.png'
-
-
 function MC() {
   const {mcInfo} = useLang();
   const aux = localStorage.getItem('theme');
@@ -39,19 +16,19 @@ function MC() {
     const [img, setImg] = useState({home:'dark:ring-offset-lm-background  shadow-xl shadow-lm-primaryVariant dark:shadow-dm-primary', mobHome:'',  detail:'', mobDetail:'', fav:'', mobFav:'', cart:'', mobCart:''});
   const [selected, setSelected] = useState('home')
   const [captionI, setCaptionI] =useState(0)
-  const [selImg, setSelImg] = useState({img:home, style:'m-10'})
+  const [selImg, setSelImg] = useState({img:'https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/home_ptxcom.png', style:'m-10'})
 
   const respImg = [
-    RespHome,
-    RespHomeMob,
-    RespDetail,
-    RespDetailMob,
-    RespFav,
-    RespFavMob,
-    RespCart,
-    RespCartMob,
+    'https://res.cloudinary.com/tropura/image/upload/v1654188108/Portfolio/mc/mob/RespHome_yld50u.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188107/Portfolio/mc/mob/RespHomeMob_tnfim6.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188108/Portfolio/mc/mob/RespDetail_nbwkrd.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188107/Portfolio/mc/mob/RespDetailMob_wm4ik5.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188107/Portfolio/mc/mob/RespFav_cceehm.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188107/Portfolio/mc/mob/RespFavMob_e4xqgp.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188106/Portfolio/mc/mob/RespCart_gd9nuk.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188107/Portfolio/mc/mob/RespCartMob_bmrvt5.png',
   ]
-  const [resp, setResp] = useState({index:0, img:RespHome})
+  const [resp, setResp] = useState({index:0, img:'https://res.cloudinary.com/tropura/image/upload/v1654188108/Portfolio/mc/mob/RespHome_yld50u.png'})
 
   function selectBack () {
     if(resp.index > 0){
@@ -79,28 +56,28 @@ function MC() {
     setSelected(e.target.name)
     switch (e.target.name) {
       case 'home':
-        setSelImg({img:home, style:'m-10'})
+        setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/home_ptxcom.png', style:'m-10'})
         break;
       case 'mobHome':
-        setSelImg({img: mobHome, style:'w-3/12 mb-10'})
+        setSelImg({img: 'https://res.cloudinary.com/tropura/image/upload/v1654188085/Portfolio/mc/mobHome_tmfedj.png', style:'w-3/12 mb-10'})
         break;
       case 'detail':
-        setSelImg({img:detail, style:'m-10'})
+        setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/detail_nxkjay.png', style:'m-10'})
         break;
       case 'mobDetail':
-        setSelImg({img:mobDetail, style:'w-3/12 mb-10'})
+        setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188085/Portfolio/mc/mobDetail_oclgfd.png', style:'w-3/12 mb-10'})
         break;
       case 'fav':
-        setSelImg({img:fav, style:'m-10'})
+        setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188083/Portfolio/mc/fav_wqghfg.png', style:'m-10'})
         break;
       case 'mobFav':
-        setSelImg({img:mobFav, style:'w-3/12 mb-10'})
+        setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188085/Portfolio/mc/mobFav_dbr0um.png', style:'w-3/12 mb-10'})
         break;
     case 'cart':
-        setSelImg({img:cart, style:'m-10'})
+        setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/cart_i8ubut.png', style:'m-10'})
         break;
     case 'mobCart':
-        setSelImg({img:mobCart, style:'w-3/12 mb-10'})
+        setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/mobCart_sdwuqx.png', style:'w-3/12 mb-10'})
         break;
       default:
         break;
@@ -110,20 +87,20 @@ function MC() {
     <div className="flex flex-col-reverse xl:flex-row items-center">
       <div className="hidden xl:block xl:w-1/5 xl:h-full xl:mt-7" id="miniaturas">
         <div className="h-1/5 flex justify-around items-center p-5">
-          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.home}`} src={home} alt="home" id={0} name='home' onClick={(e)=> highlight(e)} />
-          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobHome}`} src={mobHome} alt="mobhome" id={1} name='mobHome' onClick={(e)=> highlight(e)} />
+          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.home}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/home_ptxcom.png' alt="home" id={0} name='home' onClick={(e)=> highlight(e)} />
+          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobHome}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188085/Portfolio/mc/mobHome_tmfedj.png' alt="mobhome" id={1} name='mobHome' onClick={(e)=> highlight(e)} />
         </div>
         <div className="flex justify-around h-1/5 items-center p-5">
-          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.detail}`} src={detail} alt="detail" id={2} name='detail' onClick={(e)=> highlight(e)} />
-          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobDetail}`} src={mobDetail} alt="mobDetail" id={3} name='mobDetail' onClick={(e)=> highlight(e)} />
+          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.detail}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/detail_nxkjay.png' alt="detail" id={2} name='detail' onClick={(e)=> highlight(e)} />
+          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobDetail}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188085/Portfolio/mc/mobDetail_oclgfd.png' alt="mobDetail" id={3} name='mobDetail' onClick={(e)=> highlight(e)} />
         </div>
         <div className="flex justify-around h-1/5 items-center p-5">
-          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.fav}`} src={fav} alt="fav" id={4} name='fav' onClick={(e)=> highlight(e)} />
-          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobFav}`} src={mobFav} alt="mobFav" id={5} name='mobFav' onClick={(e)=> highlight(e)} />
+          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.fav}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188083/Portfolio/mc/fav_wqghfg.png' alt="fav" id={4} name='fav' onClick={(e)=> highlight(e)} />
+          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobFav}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188085/Portfolio/mc/mobFav_dbr0um.png' alt="mobFav" id={5} name='mobFav' onClick={(e)=> highlight(e)} />
         </div>
         <div className="flex justify-around h-1/5 items-center p-5">
-          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.cart}`} src={cart} alt="cart" id={6} name='cart' onClick={(e)=> highlight(e)} />
-          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobCart}`} src={mobCart} alt="mobCart" id={7} name='mobCart' onClick={(e)=> highlight(e)} />
+          <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.cart}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/cart_i8ubut.png' alt="cart" id={6} name='cart' onClick={(e)=> highlight(e)} />
+          <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobCart}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/mobCart_sdwuqx.png' alt="mobCart" id={7} name='mobCart' onClick={(e)=> highlight(e)} />
         </div>
       </div>
       <div className={`hidden xl:flex xl:flex-col xl:justify-center xl:items-center xl:w-3/5 xl:h-full xl:z-10`} id="foto-seleccionada">
@@ -154,13 +131,13 @@ function MC() {
         </div>
         <div className="flex justify-center">
           <button className="bg-lm-secondary dark:bg-dm-secondary rounded-md xl:w-1/6 w-1/12  m-3">
-            <a target='_blank' rel="noreferrer" className="no-underline " href="https://youtu.be/N0nbWDKR-Cc"><img className='' src={YT} alt="Youtube" /></a>
+            <a target='_blank' rel="noreferrer" className="no-underline " href="https://youtu.be/N0nbWDKR-Cc"><img className='' src='https://res.cloudinary.com/tropura/image/upload/v1654188322/Portfolio/iconos/YouTube_ssauim.png' alt="Youtube" /></a>
           </button>
           <button className="bg-lm-secondary dark:bg-dm-secondary rounded-md xl:w-1/6 w-1/12 m-3">
-            <a target='_blank' rel="noreferrer" className="no-underline" href="https://markets-center.vercel.app"><img src={web} alt="web" /></a>
+            <a target='_blank' rel="noreferrer" className="no-underline" href="https://markets-center.vercel.app"><img src='https://res.cloudinary.com/tropura/image/upload/v1654188323/Portfolio/iconos/web_kr9xo7.png' alt="web" /></a>
           </button>
           <button className="bg-lm-secondary dark:bg-dm-secondary rounded-md xl:w-1/6 w-1/12 m-3">
-            <a target='_blank' rel="noreferrer" className="no-underline" href="https://github.com/bio-clau/markets-center-client"><img src={GH} alt="GH" /></a>
+            <a target='_blank' rel="noreferrer" className="no-underline" href="https://github.com/bio-clau/markets-center-client"><img src='https://res.cloudinary.com/tropura/image/upload/v1654188321/Portfolio/iconos/GH_mxvtjm.png' alt="GH" /></a>
           </button>
         </div>
       </div>

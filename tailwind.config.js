@@ -61,14 +61,10 @@ module.exports = {
     extend: {
       backgroundImage:{
       
-        "Poke": "url('/src/img/poke/landing.png')",
-        "Poke-hover": "url('/src/img/poke/landing-hover.png')",
-        "Home": "url('/src/img/mc/home.png')",
-        "Home-hover": "url('/src/img/mc/home-hover.png')",
-        "pokedex": "url('/src/img/poke/pokedex.png')",
-        "mobPokedex": "url('/src/img/poke/mob-pokedex.png')",
-        "create": "url('/src/img/poke/create.png')",
-        "mobCreate": "url('/src/img/poke/mob-create.png')",
+        "Poke": "url('https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/landing_cmoik6.png')",
+        "Poke-hover": "url('https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/landing-hover_umb641.png')",
+        "Home": "url('https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/home_ptxcom.png')",
+        "Home-hover": "url('https://res.cloudinary.com/tropura/image/upload/v1654188085/Portfolio/mc/home-hover_yrpzkh.png')",
       },
     },
 

@@ -2,28 +2,6 @@ import React, {useState} from "react";
 import {useLang} from '../context/LangContext'
 import {ChevronRightIcon, ChevronLeftIcon} from '@heroicons/react/solid'
 
-import resCreate from '../img/poke/mob/resCreate.png';
-import resCreateMob from '../img/poke/mob/resCreateMob.png';
-import resDetail from '../img/poke/mob/resDetail.png';
-import resDetailMob from '../img/poke/mob/resDetailMob.png';
-import resLanding from '../img/poke/mob/resLanding.png';
-import resLandingMob from '../img/poke/mob/resLandingMob.png';
-import resPokedex from '../img/poke/mob/resPokedex.png';
-import resPokedexMob from '../img/poke/mob/resPokedexMob.png';
-
-import create from "../img/poke/create.png";
-import detail from "../img/poke/detail.png";
-import landing from "../img/poke/landing.png";
-import pokedex from "../img/poke/pokedex.png";
-import mobCreate from "../img/poke/mob-create.png";
-import mobDetail from "../img/poke/mob-detail.png";
-import mobLanding from "../img/poke/mob-landing.png";
-import mobPokedex from "../img/poke/mob-pokedex.png";
-
-import YouTube from '../img/iconos/YouTube.png';
-import web from '../img/iconos/web.png';
-import GH from '../img/iconos/GH.png'
-
 function PSPA() {
   const { poke} = useLang();
   
@@ -37,20 +15,20 @@ function PSPA() {
   }
   const [img, setImg] = useState({landing:'dark:ring-offset-lm-background  shadow-xl shadow-lm-primaryVariant dark:shadow-dm-primary', mobLanding:'', pokedex:'', mobPokedex:'', detail:'', mobDetail:'', create:'', mobCreate:''});
   const [selected, setSelected] = useState('landing')
-  const [selImg, setSelImg] = useState({img:landing, style:'m-10'})
+  const [selImg, setSelImg] = useState({img:'https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/landing_cmoik6.png', style:'m-10'})
   const [captionI, setCaptionI] =useState(0)
 
   const respImg = [
-    resLanding,
-    resLandingMob,
-    resPokedex,
-    resPokedexMob,
-    resDetail,
-    resDetailMob,
-    resCreate,
-    resCreateMob,
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resLanding_pke0ib.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resLandingMob_amalkg.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resPokedex_chkbct.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resPokedexMob_li8fhs.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resDetail_ws7bmi.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resDetailMob_laoebo.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resCreate_pxf3q3.png',
+    'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resCreateMob_etmklv.png',
   ]
-  const [resp, setResp] = useState({index:0, img:resLanding})
+  const [resp, setResp] = useState({index:0, img:'https://res.cloudinary.com/tropura/image/upload/v1654188035/Portfolio/Poke/mob/resLanding_pke0ib.png'})
 
     function selectBack () {
       if(resp.index > 0){
@@ -78,28 +56,28 @@ function PSPA() {
       setSelected(e.target.name)
       switch (e.target.name) {
         case 'landing':
-          setSelImg({img:landing, style:'m-10'})
+          setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/landing_cmoik6.png', style:'m-10'})
           break;
         case 'mobLanding':
-          setSelImg({img: mobLanding, style:'w-3/12 mb-10'})
+          setSelImg({img: 'https://res.cloudinary.com/tropura/image/upload/v1654188013/Portfolio/Poke/mob-landing_hwnkno.png', style:'w-3/12 mb-10'})
           break;
         case 'pokedex':
-          setSelImg({img:pokedex, style:'m-10'})
+          setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188013/Portfolio/Poke/pokedex_hziuq0.png', style:'m-10'})
           break;
         case 'mobPokedex':
-          setSelImg({img: mobPokedex, style:'w-3/12 mb-10'})
+          setSelImg({img: 'https://res.cloudinary.com/tropura/image/upload/v1654188013/Portfolio/Poke/mob-pokedex_wmzgxg.png', style:'w-3/12 mb-10'})
           break;
         case 'detail':
-          setSelImg({img:detail, style:'m-10'})
+          setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/detail_bvjvhn.png', style:'m-10'})
           break;
         case 'mobDetail':
-          setSelImg({img:mobDetail, style:'w-3/12 mb-10'})
+          setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/mob-detail_tcrxf0.png', style:'w-3/12 mb-10'})
           break;
         case 'create':
-          setSelImg({img:create, style:'m-10'})
+          setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/create_qcf3so.png', style:'m-10'})
           break;
         case 'mobCreate':
-          setSelImg({img:mobCreate, style:'w-3/12 mb-10'})
+          setSelImg({img:'https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/mob-create_ncovin.png', style:'w-3/12 mb-10'})
           break;
         default:
           break;
@@ -109,20 +87,20 @@ function PSPA() {
       <div className="flex flex-col-reverse xl:flex-row items-center">
         <div className="hidden xl:block xl:w-1/5 xl:h-full xl:mt-7" id="miniaturas">
           <div className="h-1/5 flex justify-around items-center p-5">
-            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.landing}`} src={landing} alt="landing" id={0} name='landing' onClick={(e)=> highlight(e)} />
-            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobLanding}`} src={mobLanding} alt="moblanding" id={1} name='mobLanding' onClick={(e)=> highlight(e)} />
+            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.landing}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/landing_cmoik6.png' alt="landing" id={0} name='landing' onClick={(e)=> highlight(e)} />
+            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobLanding}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188013/Portfolio/Poke/mob-landing_hwnkno.png' alt="moblanding" id={1} name='mobLanding' onClick={(e)=> highlight(e)} />
           </div>
           <div className="flex justify-around h-1/5 items-center p-5">
-            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.pokedex}`} src={pokedex} alt="pokedex" id={2} name='pokedex' onClick={(e)=> highlight(e)} />
-            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobPokedex}`} src={mobPokedex} alt="mobPokedex" id={3} name='mobPokedex' onClick={(e)=> highlight(e)} />
+            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.pokedex}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188013/Portfolio/Poke/pokedex_hziuq0.png' alt="pokedex" id={2} name='pokedex' onClick={(e)=> highlight(e)} />
+            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobPokedex}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188013/Portfolio/Poke/mob-pokedex_wmzgxg.png' alt="mobPokedex" id={3} name='mobPokedex' onClick={(e)=> highlight(e)} />
           </div>
           <div className="flex justify-around h-1/5 items-center p-5">
-            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.detail}`} src={detail} alt="detail" id={4} name='detail' onClick={(e)=> highlight(e)} />
-            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobDetail}`} src={mobDetail} alt="mobDetail" id={5} name='mobDetail' onClick={(e)=> highlight(e)} />
+            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.detail}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/detail_bvjvhn.png' alt="detail" id={4} name='detail' onClick={(e)=> highlight(e)} />
+            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobDetail}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/mob-detail_tcrxf0.png' alt="mobDetail" id={5} name='mobDetail' onClick={(e)=> highlight(e)} />
           </div>
           <div className="flex justify-around h-1/5 items-center p-5">
-            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.create}`} src={create} alt="create" id={6} name='create' onClick={(e)=> highlight(e)} />
-            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobCreate}`} src={mobCreate} alt="mobCreate" id={7} name='mobCreate' onClick={(e)=> highlight(e)} />
+            <img className={`w-3/6 h-fit cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.create}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/create_qcf3so.png' alt="create" id={6} name='create' onClick={(e)=> highlight(e)} />
+            <img className={`w-1/5 h-auto cursor-pointer border-2 border-lm-primary dark:border-dm-primary ${img.mobCreate}`} src='https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/mob-create_ncovin.png' alt="mobCreate" id={7} name='mobCreate' onClick={(e)=> highlight(e)} />
           </div>
         </div>
         <div className={`hidden xl:flex xl:flex-col xl:justify-center xl:items-center xl:w-3/5 xl:h-full xl:z-10`} id="foto-seleccionada">
@@ -152,14 +130,14 @@ function PSPA() {
           </div>
           <div className="flex justify-center">
             <button className="bg-lm-secondary dark:bg-dm-secondary rounded-md xl:w-1/6 w-1/12  m-3">
-              <a target='_blank' rel="noreferrer" className="no-underline" href="https://youtu.be/Un1ZjoOC0uw"><img src={YouTube} alt="YT" /></a>
+              <a target='_blank' rel="noreferrer" className="no-underline" href="https://youtu.be/Un1ZjoOC0uw"><img src='https://res.cloudinary.com/tropura/image/upload/v1654188322/Portfolio/iconos/YouTube_ssauim.png' alt="YT" /></a>
             </button>
             <button className="bg-lm-secondary dark:bg-dm-secondary rounded-md xl:w-1/6 w-1/12 m-3">
-              <a target='_blank' rel="noreferrer" className="no-underline" href="https://henry-pi-frontend.herokuapp.com/"><img src={web} alt="web" /></a>
+              <a target='_blank' rel="noreferrer" className="no-underline" href="https://henry-pi-frontend.herokuapp.com/"><img src='https://res.cloudinary.com/tropura/image/upload/v1654188323/Portfolio/iconos/web_kr9xo7.png' alt="web" /></a>
               
             </button>
             <button className="bg-lm-secondary dark:bg-dm-secondary rounded-md xl:w-1/6 w-1/12 m-3">
-              <a target='_blank' rel="noreferrer" className="no-underline" href="https://github.com/bio-clau/PI-Henry"><img src={GH} alt="GH" /></a>
+              <a target='_blank' rel="noreferrer" className="no-underline" href="https://github.com/bio-clau/PI-Henry"><img src='https://res.cloudinary.com/tropura/image/upload/v1654188321/Portfolio/iconos/GH_mxvtjm.png' alt="GH" /></a>
             </button>
           </div>
         </div>

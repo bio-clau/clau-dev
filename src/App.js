@@ -10,11 +10,6 @@ import Contact from './pages/Contact'
 import Thanks from './pages/Thanks'
 
 function App() {
-  // useEffect(()=>{
-  //   if(!localStorage.lang){
-  //     localStorage.setItem('lang', 'eng')
-  //   }
-  // }, [])
   return (
     <LangProvider>
       <Navbar />

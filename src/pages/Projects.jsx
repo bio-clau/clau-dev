@@ -1,8 +1,6 @@
 import React from "react";
 import {useLang} from '../context/LangContext'
 import { useNavigate } from "react-router-dom";
-import Landing from "../img/poke/landing.png";
-import Home from '../img/mc/home.png'
 
 function Projects() {
   const {lang} = useLang();
@@ -32,7 +30,7 @@ function Projects() {
           <p className="text-lm-onBackground dark:text-dm-onBackground text-lg pb-4">
             {lang==='eng'?'FullStack Development of an S.P.A. using pokeapi.co':'Desarrollo Full Stack de una S.P.A. utilizando pokeapi.co'}
           </p>
-          <img className="p-4" src={Landing} alt="PokeLanding" />
+          <img className="p-4" src='https://res.cloudinary.com/tropura/image/upload/v1654188012/Portfolio/Poke/landing_cmoik6.png' alt="PokeLanding" />
           <button
             onClick={goPoke}
             className="bg-lm-secondary text-lm-onSecondary dark:bg-dm-primary transition duration-500 ease-in-out dark:text-dm-onPrimary p-1 px-2 m-3 rounded-lg font-bold hover:ring-2 ring-lm-secondaryVariant dark:ring-dm-onBackground"
@@ -45,7 +43,7 @@ function Projects() {
           <p className="text-lm-onBackground dark:text-dm-onBackground text-lg pb-4">
             {lang==='eng'?'Group FullStack Development of a market place':'Desarrollo Full Stack grupal de un market place'}
           </p>
-          <img className="p-4" src={Home} alt="MChome" />
+          <img className="p-4" src='https://res.cloudinary.com/tropura/image/upload/v1654188084/Portfolio/mc/home_ptxcom.png' alt="MChome" />
           <button
             onClick={goMC}
             className="bg-lm-secondary text-lm-onSecondary dark:bg-dm-primary transition duration-500 ease-in-out dark:text-dm-onPrimary p-1 px-2 m-3 rounded-lg font-bold hover:ring-2 ring-lm-secondaryVariant dark:ring-dm-onBackground"
